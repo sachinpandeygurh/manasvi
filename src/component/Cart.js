@@ -57,7 +57,7 @@ export default function Card() {
 
     return (
         <>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginHorizontal: 5, marginVertical: 10 }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop:20, marginHorizontal:10,  minWidth:20}}>
                 <TouchableOpacity onPress={() => handlePress(1)}>
                     <View style={[styles.option, { borderColor: highlightedOption === 1 ? '#FBCE6B' : '#212A3D' }]}>
                         <Text style={{ color: highlightedOption === 1 ? '#FBCE6B' : '#ABABAB' }}>Option 1</Text>
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     },
     option: {
         backgroundColor: '#212A3DF2',
-        width: 106,
+        width: 120,
         height: 41,
         gap: 0,
         borderRadius: 9,

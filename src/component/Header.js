@@ -36,7 +36,7 @@ const Header = ({backarrow=true}) => {
   return (
     <>
       <View style={styles.headerContainer}>
-          <StatusBar animated={true}  backgroundColor="#F4BA00" /> 
+          <StatusBar animated={true}  backgroundColor="#FBCE6B" /> 
         <SafeAreaView style={styles.container}>
           <ImageBackground
             source={require('../assets/icon/header_logo.png')}
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: '#F4BA00',
+    backgroundColor: '#FBCE6B',
     opacity: 0.78,
   },
   headerContent: {

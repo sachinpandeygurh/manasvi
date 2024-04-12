@@ -112,7 +112,7 @@ export default function MainMaster() {
                         </>}
 
                         {highlightedOption === 2 && <>
-                            <Search text="Search.." modelName="Add Ledgers" modelbody={<AddLedgers />} dropitems={false} dropinput1='-Agent Name-' dropinput2='-All Group-' />
+                            <Search text="Search.." modelName="Add Ledgers" modelbody={<AddLedgers />} dropitems={true} dropinput1='-Agent Name-' dropinput2='-All Group-' />
                             <TableHeader />
                             {data && data.map((item, index) => {
                                 const dateObj = new Date(item.openDate);

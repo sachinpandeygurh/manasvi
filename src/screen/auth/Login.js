@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Animated, Image, Linking, Pressable, RefreshControl, SafeAreaView, ScrollView, StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
+import { Animated, Image, Linking, Pressable, RefreshControl, SafeAreaView, ScrollView, StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar, Alert } from 'react-native';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import { LinearGradient } from 'react-native-linear-gradient';
@@ -77,6 +77,7 @@ const Login = ({ navigation }) => {
         navigation.navigate('Home');
         console.log("Navigation successful!");
       } else {
+        Alert.alert("Enter correct Username  & Password")
         console.log("Error", res.data.message);
         setLoading(false);
       }

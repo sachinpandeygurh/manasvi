@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, Modal, StyleSheet, Text, Pressable, View } from 'react-native';
+import { Alert, Modal, StyleSheet, Text, Pressable, View, StatusBar } from 'react-native';
 import Logout from '../screen/auth/Logout';
 
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -24,6 +24,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 
     return (
         <View style={styles.centeredView}>
+            <StatusBar hidden/>
             <Modal
                 animationType="slide"
                 transparent={true}
@@ -79,10 +80,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
-        backgroundColor: '#0a142c47',
+        backgroundColor: '#292A2A',
     },
     modalView: {
-        backgroundColor: '#0a142ccf',
+        backgroundColor: '#292A2A',
         borderRadius: 2,
         paddingVertical: 30,
         alignItems: 'center',
