@@ -65,7 +65,7 @@ const Login = ({ navigation }) => {
       const res = await axios.post("https://ntc98.com/api/token/auth", {
         grant_Type: "password",
         username,
-        password,
+        password, 
       });
 
       console.log("res?.data", res?.data);
